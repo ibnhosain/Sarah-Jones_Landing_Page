@@ -1,5 +1,95 @@
+/* Google fonts */
+@import url(@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Bangla:ital@0;1&display=swap'));
+/* root colors */
+:root{
+    --primary:#1F1F1F;
+    --secodary:#FC3314;
+    --pink:rgba(255,212,208,1);
+    --Dark-Grey:rgba(141,141,141,1);
+    --Medium-Grey:rgba(225,225,225,1);
+    --Grey:#F7F7F7;
+    --body:rgba(255,255,255,1);
+    
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* common css */
+body{
+    font-family:"Montserrat", sans-serif;
+    color:aliceblue;
+    background-color:var() ;
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+h1{
+    font-weight: 800;
+    font-size: 4rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 3rem;
+}
+h3{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding-right:50px ;
+}
+li{
+    padding-left: 50px;
+    z-index: 1;
+}
+/* container */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container-flex{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+
+}
+.flex-space-betn{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+/* header */
+header{
+    background-color:var(--pink);
+    width: 100%;
+    position: absolute;
+}
+header.logo>img{
+    width: 120px;
+}
+ul::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: #FC3314;
+    position: relative;
+    top: -30px;
+    left: 80px;
+    z-index: 0;
+    border-radius: 50px;
+}
+ul>li>a{
+    font-weight: 600;
+    color: var(--primary);
+}
+.button>a{
+    background-color: var(--primary);
+    padding: 10px 18px;
+    color:var(--Grey)
 }
