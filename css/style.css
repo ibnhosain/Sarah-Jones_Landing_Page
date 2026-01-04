@@ -68,7 +68,7 @@ li{
 header{
     background-color:var(--pink);
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 header.logo>img{
     width: 120px;
@@ -77,8 +77,8 @@ ul::before {
     content: "";
     width: 90px;
     height: 90px;
-    background-color: #FC3314;
-    position: relative;
+    background-color: #44ef00;
+    position: absolute;
     top: -30px;
     left: 80px;
     z-index: 0;
